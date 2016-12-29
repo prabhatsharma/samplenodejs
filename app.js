@@ -4,7 +4,7 @@ var os = require("os");
 var hostname = os.hostname();
 
 function respond(req, res, next) {
-  res.send('server ' + hostname + 'says, hello ' + req.params.name);
+  res.send('server ' + hostname + ' says, hello ' + req.params.name);
   next();
 }
 
